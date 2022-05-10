@@ -114,10 +114,13 @@ printf("YOUR ACCOUNT BALANCE IS %.2f",mainBalance);
 return 0;}
 
 //MAIN FUNCTION
-int choice()
+int choice(anothertrans)
 { 
-  int ATM;
-  
+  int anothertrans;
+{ 
+  do
+  {
+int ATM;
 printf("\n\n WELCOME TO MY ATM SERVICE!!!\n");
 printf("--------------------------------------------------------------\n");
 printf("PLEASE INSERT YOUR CARD\n\n");
@@ -165,4 +168,12 @@ scanf("%d",&ATM);
  }
  
                       
-}
+   printf ("do u wish to continue");
+   scanf("%d",&anothertrans);
+   if (anothertrans == 2)
+   break;
+   }while(1);
+   
+  
+  
+  
